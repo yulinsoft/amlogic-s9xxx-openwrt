@@ -109,15 +109,15 @@ CONFIG_DEFAULT_libgcc=y
 CONFIG_DEFAULT_libustream-openssl=y
 CONFIG_DEFAULT_logd=y
 CONFIG_DEFAULT_luci=y
-# CONFIG_DEFAULT_luci-app-accesscontrol is not set
+CONFIG_DEFAULT_luci-app-accesscontrol=n
 CONFIG_DEFAULT_luci-app-arpbind=y
-# CONFIG_DEFAULT_luci-app-autoreboot is not set
+CONFIG_DEFAULT_luci-app-autoreboot=n
 CONFIG_DEFAULT_luci-app-ddns=y
-# CONFIG_DEFAULT_luci-app-filetransfer is not set
-# CONFIG_DEFAULT_luci-app-nlbwmon is not set
-# CONFIG_DEFAULT_luci-app-ssr-plus is not set
+CONFIG_DEFAULT_luci-app-filetransfer=n
+CONFIG_DEFAULT_luci-app-nlbwmon=n
+CONFIG_DEFAULT_luci-app-ssr-plus=n
 CONFIG_DEFAULT_luci-app-turboacc=y
-# CONFIG_DEFAULT_luci-app-upnp is not set
+CONFIG_DEFAULT_luci-app-upnp=n
 CONFIG_DEFAULT_luci-app-vlmcsd=y
 CONFIG_DEFAULT_luci-app-vsftpd=y
 CONFIG_DEFAULT_luci-app-wol=y
@@ -5809,7 +5809,7 @@ CONFIG_PACKAGE_rclone-webui-react=y
 # Download Manager
 #
 # CONFIG_PACKAGE_BaiduPCS-Go is not set
-# CONFIG_PACKAGE_ariang is not set
+CONFIG_PACKAGE_ariang=y
 # CONFIG_PACKAGE_ariang-nginx is not set
 # CONFIG_PACKAGE_leech is not set
 # CONFIG_PACKAGE_webui-aria2 is not set
@@ -5818,7 +5818,7 @@ CONFIG_PACKAGE_rclone-webui-react=y
 #
 # File Transfer
 #
-# CONFIG_PACKAGE_aria2 is not set
+CONFIG_PACKAGE_aria2=y
 # CONFIG_PACKAGE_atftp is not set
 # CONFIG_PACKAGE_atftpd is not set
 CONFIG_PACKAGE_curl=y
@@ -5936,7 +5936,7 @@ CONFIG_PACKAGE_iptables-mod-tproxy=y
 # end of Select iptgeoip options
 
 # CONFIG_PACKAGE_miniupnpc is not set
-CONFIG_PACKAGE_miniupnpd=y
+# CONFIG_PACKAGE_miniupnpd=y
 # CONFIG_MINIUPNPD_IGDv2 is not set
 # CONFIG_PACKAGE_natpmpc is not set
 # CONFIG_PACKAGE_nftables-json is not set
@@ -6704,7 +6704,7 @@ CONFIG_PACKAGE_ethtool=y
 CONFIG_PACKAGE_iftop=y
 # CONFIG_PACKAGE_iiod is not set
 # CONFIG_PACKAGE_iperf is not set
-CONFIG_PACKAGE_iperf3=y
+# CONFIG_PACKAGE_iperf3=y
 # CONFIG_PACKAGE_iperf3-ssl is not set
 CONFIG_PACKAGE_ipip=y
 # CONFIG_PACKAGE_ipip6 is not set
@@ -7081,7 +7081,7 @@ CONFIG_PARTED_READLINE=y
 # CONFIG_PACKAGE_joe-extras is not set
 # CONFIG_PACKAGE_jupp is not set
 # CONFIG_PACKAGE_mg is not set
-CONFIG_PACKAGE_nano=y
+# CONFIG_PACKAGE_nano=y
 # CONFIG_PACKAGE_nano-full is not set
 # CONFIG_PACKAGE_nano-plus is not set
 CONFIG_PACKAGE_vim=y
@@ -7361,7 +7361,7 @@ CONFIG_PACKAGE_cgroupfs-mount=y
 # CONFIG_PACKAGE_collectd is not set
 # CONFIG_PACKAGE_conmon is not set
 CONFIG_PACKAGE_containerd=y
-CONFIG_PACKAGE_coremark=y
+# CONFIG_PACKAGE_coremark=y
 CONFIG_COREMARK_OPTIMIZE_O3=y
 CONFIG_COREMARK_ENABLE_MULTITHREADING=y
 CONFIG_COREMARK_NUMBER_OF_THREADS=8
