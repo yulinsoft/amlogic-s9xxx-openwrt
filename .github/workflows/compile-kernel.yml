@@ -27,6 +27,7 @@ on:
           - 5.4.y
           - 5.10.y
           - 5.15.y
+          - 5.15.167
           - 6.1.y
           - 6.6.y
           - 6.6.63
@@ -77,6 +78,7 @@ on:
           - -ophub
           - -yourname
           - -1-804d540234c10e08b7079f12348590d2
+          - -1-d93c06fec09a43c065e8a5f8151bb87f
 
 env:
   TZ: America/New_York
