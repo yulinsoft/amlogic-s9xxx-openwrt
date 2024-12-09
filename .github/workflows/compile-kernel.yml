@@ -21,7 +21,7 @@ on:
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "6.6.y"
+        default: "6.6.63"
         type: choice
         options:
           - 5.4.y
@@ -29,12 +29,13 @@ on:
           - 5.15.y
           - 6.1.y
           - 6.6.y
+          - 6.6.63
           - 6.1.y_6.6.y
           - 5.15.y_5.10.y
       kernel_auto:
         description: "Auto use the latest kernel"
         required: false
-        default: true
+        default: false
         type: boolean
       kernel_package:
         description: "Select compile package list"
@@ -70,11 +71,12 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-1-804d540234c10e08b7079f12348590d2"
         type: choice
         options:
           - -ophub
           - -yourname
+          - -1-804d540234c10e08b7079f12348590d2
 
 env:
   TZ: America/New_York
