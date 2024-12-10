@@ -21,7 +21,7 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905d"
         type: choice
         options:
           - all
@@ -198,6 +198,7 @@ on:
         type: choice
         options:
           - ophub/kernel
+          - yulinsoft/amlogic-s9xxx-openwrt
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
