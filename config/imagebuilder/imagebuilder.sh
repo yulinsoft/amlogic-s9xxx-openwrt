@@ -137,7 +137,20 @@ custom_packages() {
     curl -fsSOJL ${amlogic_i18n_down}
     [[ "${?}" -eq "0" ]] || error_msg "[ ${amlogic_i18n} ] download failed!"
     echo -e "${INFO} The [ ${amlogic_i18n} ] is downloaded successfully."
-
+    
+    # Download luci-theme-argon
+    curl -fsSOJL "https://github.com/jerrykuku/luci-theme-argon/releases/download/v2.3.1/luci-theme-argon_2.3.1_all.ipk"
+    [[ "${?}" -eq "0" ]] || error_msg "[luci-theme-argon] download failed!"
+    echo -e "${INFO} The [luci-theme-argon] is downloaded successfully."
+    
+   # Download luci-app-tailscale
+    curl -fsSOJL "https://dl.openwrt.ai/releases/24.10/packages/aarch64_generic/kiddin9/luci-app-tailscale_25.335.56274~b1cf551_all.ipk"
+    [[ "${?}" -eq "0" ]] || error_msg "[luci-app-tailscale] download failed!"
+    echo -e "${INFO} The [luci-app-tailscale] is downloaded successfully."
+    curl -fsSOJL "https://dl.openwrt.ai/releases/24.10/packages/aarch64_generic/kiddin9/tailscale_1.76.6-r4_aarch64_generic.ipk"
+    [[ "${?}" -eq "0" ]] || error_msg "[tailscale] download failed!"
+    echo -e "${INFO} The [tailscale] is downloaded successfully."  
+    
     # Download other luci-app-xxx
     # ......
 
@@ -201,7 +214,7 @@ rebuild_firmware() {
         luci-mod-status luci-mod-system luci-proto-3g luci-proto-bonding luci-proto-ipip luci-proto-ipv6 \
         luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
         \
-        luci-app-amlogic luci-i18n-amlogic-zh-cn \
+        luci-app-amlogic luci-i18n-amlogic-zh-cn luci-theme-argon luci-app-tailscale tailscale \
         \
         ${config_list} \
         "
