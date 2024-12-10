@@ -149,7 +149,7 @@ jobs:
           kernel_version: ${{ inputs.kernel_version }}
           kernel_auto: ${{ inputs.kernel_auto }}
           kernel_package: ${{ inputs.kernel_package }}
-          kernel_sign: ''
+          kernel_sign: '-1'
           kernel_toolchain: ${{ inputs.kernel_toolchain }}
           compress_format: ${{ inputs.compress_format }}
 
