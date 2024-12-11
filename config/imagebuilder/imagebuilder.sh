@@ -144,7 +144,7 @@ custom_packages() {
     echo -e "${INFO} The [luci-theme-argon] is downloaded successfully."
     
     # Download luci-app-adguardhome
-    curl -fsSOJL "https://https://dl.openwrt.ai/releases/24.10/packages/aarch64_generic/kiddin9/luci-app-adguardhome_25.335.56274~b1cf551_all.ipk"
+    curl -fsSOJL "https://dl.openwrt.ai/releases/24.10/packages/aarch64_generic/kiddin9/luci-app-adguardhome_25.335.56274~b1cf551_all.ipk"
     [[ "${?}" -eq "0" ]] || error_msg "[luci-app-adguardhome] download failed!"
     echo -e "${INFO} The [luci-app-adguardhome] is downloaded successfully."
     curl -fsSOJL "https://dl.openwrt.ai/releases/24.10/packages/aarch64_generic/kiddin9/adguardhome_0.107.54-r3_aarch64_generic.ipk"
