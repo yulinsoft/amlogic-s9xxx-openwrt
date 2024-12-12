@@ -12,7 +12,7 @@ on:
       source_branch:
         description: "Select the source branch"
         required: false
-        default: "openwrt-main"
+        default: "lede-master"
         type: choice
         options:
           - openwrt-main
@@ -21,7 +21,7 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905d"
         type: choice
         options:
           - all
@@ -176,7 +176,7 @@ on:
       openwrt_kernel:
         description: "Select kernel version"
         required: false
-        default: "5.15.167_6.6.63"
+        default: "6.1.y_6.6.y"
         type: choice
         options:
           - 5.4.y
@@ -184,10 +184,8 @@ on:
           - 5.15.y
           - 6.1.y
           - 6.6.y
-          - 6.6.63
           - 6.1.y_6.6.y
           - 5.15.y_5.10.y
-          - 5.15.167_6.6.63
       auto_kernel:
         description: "Auto use the latest kernel"
         required: false
@@ -298,7 +296,7 @@ jobs:
               TAGS_NAME="official"
           elif [[ "${{ inputs.source_branch }}" == *"lede"* ]]; then
               REPO_URL="https://github.com/coolsnowwolf/lede"
-              REPO_BRANCH="master"
+              REPO_BRANCH="e66ffaf37c785a6bcfc701b9b2499952c14e1f76"
               TAGS_NAME="lede"
           elif [[ "${{ inputs.source_branch }}" == *"immortalwrt"* ]]; then
               REPO_URL="https://github.com/immortalwrt/immortalwrt"
